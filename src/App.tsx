@@ -25,7 +25,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/nvsko.net">
           <ScrollToTop /> 
           <Layout> {/* <-- WRAP Routes inside Layout */}
             <Routes>
