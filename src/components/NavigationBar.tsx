@@ -22,7 +22,7 @@ const NavigationBar = () => {
         </Link>
         
         <div className="flex items-center gap-6">
-          <Link to="/*" className="flex items-center gap-2 hover:text-primary">
+          <Link to="/nvsko.net/" className="flex items-center gap-2 hover:text-primary">
             <Home size={20} />
             <span>Home</span>
           </Link>
