@@ -29,6 +29,7 @@ const App = () => (
           <ScrollToTop /> 
           <Layout> {/* <-- WRAP Routes inside Layout */}
             <Routes>
+              <Route path="/*" element={<Index />} />
               <Route path="/index" element={<Index />} />  {/* used to be "/" */}
               <Route path="/library" element={<Library />} />
               <Route path="/blog" element={<Blog />} />
