@@ -30,7 +30,6 @@ const App = () => (
           <Layout> {/* <-- WRAP Routes inside Layout */}
             <Routes>
               <Route path="/*" element={<Index />} />     {/* didn't even exist */}
-              <Route path="/index" element={<Index />} />  {/* used to be "/" */}
               <Route path="/library" element={<Library />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/about" element={<About />} />
