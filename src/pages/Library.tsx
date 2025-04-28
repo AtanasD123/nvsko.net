@@ -41,7 +41,7 @@ const Library = () => {
   return (
     <div className="container py-20 animate-fadeIn">
       <h1 className="text-4xl font-migra mb-12 flex items-center gap-3">
-        <span className="text-primary">My Library</span>
+        <span className="text-4xl text-center">My Library</span>
       </h1>
       
       <LibraryShelf>

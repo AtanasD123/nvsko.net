@@ -69,11 +69,31 @@ export default {
           from: { opacity: '0', transform: 'translateY(10px)' },
           to: { opacity: '1', transform: 'translateY(0)' },
         },
+          slideInUp: {
+            '0%':   { transform: 'translateY(50px)', opacity: '0' },
+            '100%': { transform: 'translateY(0)',     opacity: '1' },
+          },
+          wiggle: {
+            '0%, 100%': { transform: 'rotate(-3deg)' },
+            '50%':      { transform: 'rotate(3deg)'  },
+          },
+          shimmer: {
+            '0%':   { backgroundPosition: '-200% 0' },
+            '100%': { backgroundPosition: '200% 0'  },
+          },
+          flip: {
+            '0%':   { transform: 'perspective(400px) rotateY(0deg)' },
+            '100%': { transform: 'perspective(400px) rotateY(180deg)' },
+          },
       },
       animation: {
         fadeIn: 'fadeIn 0.5s ease-out forwards',
-        fadeInSlow:  "fadeIn 1.2s ease-out forwards",
-        fadeInFast:  "fadeIn 0.3s ease-out forwards"
+        fadeInSlow: "fadeIn 1.2s ease-out forwards",
+        fadeInFast: "fadeIn 0.3s ease-out forwards",
+        slideInUp: 'slideInUp 0.5s ease-out forwards',
+        wiggle: 'wiggle 1s ease-in-out infinite',
+        shimmer:'shimmer 2s linear infinite',
+        flip:'flip 0.6s ease-in-out forwards',
       },
     },
   },

@@ -42,18 +42,17 @@ const blogPosts = [
 const Blog = () => {
   return (
     <div className="container py-20 animate-fadeIn">
-      <div className="flex items-center gap-3 mb-8">
-        <FileText className="h-8 w-8 text-primary" />
-        <h1 className="text-4xl font-migra">Blog Posts</h1>
+      <div className=" items-center pb-5">
+        <h1 className="text-4xl font-migra text-center mr-[330px] mt-[20px] mb-[20px]">Blog Posts</h1>
       </div>
       
-      <div className="flex gap-6">
+      <div className="flex gap-6 gap-5">
         <ScrollArea className="h-[calc(100vh-12rem)] flex-1">
           <div className="grid gap-6 pb-8">
             {blogPosts.map((post, index) => (
               <Card 
                 key={index} 
-                className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 border border-primary/20"
+                className="p-6 hover:shadow-xl transition-all transform scale-95 duration-300 hover:-translate-y-0.5 border border-primary/50"
               >
                 <div className="flex flex-col">
                   <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">

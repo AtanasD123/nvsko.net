@@ -32,10 +32,10 @@ const ReadingList = () => {
           <a 
           target="_blank" 
           rel="noopener noreferrer"
-          className="animate-fadeInSlow transition-all"
+          className="animate-slideInUp transition-all"
           style={{ animationDelay: `${(index) * 250 + 375}ms` }}
         >
-          <Card key={index} className="p-6 hover:shadow-xl hover:-translate-y-0.5 transition-all" style={{animationDelay: `${index * 100}ms`}}>
+          <Card key={index} className="p-6 hover:shadow-xl hover:-translate-y-0.5 transition-all  border border-primary/50" style={{animationDelay: `${index * 100}ms`}}>
             <div className="flex items-start gap-4">
               <div className="p-2 bg-primary/10 rounded-lg">
                 <Book className="text-primary" size={24} />

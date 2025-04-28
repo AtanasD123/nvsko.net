@@ -26,7 +26,7 @@ const FeaturedProjects = () => {
   return (
     <section className="container py-20">
       <h2 className="text-3xl font-sans font-bold mb-12">What I've been workin on</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fadeInSlow" style={{animationDelay: `${150}ms`}}>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-slideInUp" style={{animationDelay: `${250}ms`}}>
         {projects.map((project, index) => (
           <a 
           href={project.link} 
@@ -35,7 +35,7 @@ const FeaturedProjects = () => {
           className=""
           style={{ animationDelay: `${index * 100}ms` }}
         >
-          <Card key={index} className="p-6 hover:shadow-xl hover:-translate-y-0.5 transition-all" style={{animationDelay: `${index * 100}ms`}}>
+          <Card key={index} className="p-6 hover:shadow-xl hover:-translate-y-0.5 transition-all border border-primary/50" style={{animationDelay: `${index * 100}ms`}}>
             <h3 className="text-xl font-playfair font-bold mb-2">{project.title}</h3>
             <p className="text-muted-foreground mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2">

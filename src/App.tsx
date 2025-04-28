@@ -27,7 +27,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollToTop /> 
-          <Layout> {/* <-- WRAP Routes inside Layout */}
+          <Layout> 
             <Routes>
               <Route path="/*" element={<Index />} />     {/* didn't even exist */}
               <Route path="/index" element={<Index />} /> 
