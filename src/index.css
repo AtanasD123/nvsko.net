@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: "Migra";
+  src: url("src/assets/fonts/Migra-Extrabold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%; /* Black */
+    --foreground: 0 0% 100%; /* White */
+    --card: 0 0% 0%; /* Black */
+    --card-foreground: 0 0% 100%; /* White */
+    --popover: 0 0% 0%; /* Black */
+    --popover-foreground: 0 0% 100%; /* White */
+    --primary: 250 47% 56%; /* Purple stays the same */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 20%; /* Dark gray */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 20%; /* Dark gray */
+    --muted-foreground: 0 0% 80%;
+    --accent: 0 0% 20%; /* Dark gray */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 30%; /* Dark border */
+    --input: 0 0% 30%;
+    --ring: 250 47% 56%; /* Purple stays the same */
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 0 0% 100%; /* White */
+    --foreground: 0 0% 0%; /* Black */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 0%; /* Black */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 0 0% 0%; /* Black */
+    --primary: 250 47% 56%; /* Purple stays the same */
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 90%; /* Light gray */
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 90%; /* Light gray */
+    --muted-foreground: 0 0% 20%;
+    --accent: 0 0% 90%; /* Light gray */
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 80%; /* Light border */
+    --input: 0 0% 80%;
+    --ring: 250 47% 56%; /* Purple stays the same */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-playfair;
+  }
+}
+
+.fade-in {
+  @apply motion-safe:animate-fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
