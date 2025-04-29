@@ -29,7 +29,7 @@ const App = () => (
           <ScrollToTop /> 
           <Layout> 
             <Routes>
-              <Route path="/*" element={<Index />} />     {/* didn't even exist */}
+              <Route path="/" element={<Index />} />     {/* didn't even exist */}
               <Route path="/index" element={<Index />} /> 
               <Route path="/library" element={<Library />} />
               <Route path="/blog" element={<Blog />} />
