@@ -39,7 +39,7 @@ export const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5">
           <div className="hover:scale-105 transition-all transform">
             <Card className="p-6 hover:shadow-lg transform transition border-primary/50 animate-fadeInSlow"
-             style={{animationDelay: `${300}ms`}}>
+             style={{animationDelay: `${200}ms`}}>
               <h3 className="flex items-center text-2xl font-semibold mb-4">
                 <GraduationCap className="mr-3 h-6 w-6 mb-1 text-primary" /> Education
               </h3>
@@ -56,7 +56,7 @@ export const About = () => {
 
             <div className="hover:scale-105 transition-all transform">
             <Card className="p-6 hover:shadow-lg transform hover:scale-105 transition border-primary/50 animate-fadeInSlow" 
-             style={{animationDelay: `${300}ms`}}>
+             style={{animationDelay: `${200}ms`}}>
               <h3 className="flex items-center text-2xl font-semibold mb-4">
                 <Briefcase className="mr-3 h-6 w-6 mb-0.25 text-primary" /> Work Experience
               </h3>
@@ -71,7 +71,7 @@ export const About = () => {
             </div>
           </div>
         
-          <div className="animate-fadeInSlow" style={{animationDelay: `${400}ms`}}>
+          <div className="animate-fadeInSlow" style={{animationDelay: `${250}ms`}}>
           <Card className="p-6 hover:shadow-xl transform hover:shadow-xl hover:-translate-y-0.5 transition border-primary/50">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
