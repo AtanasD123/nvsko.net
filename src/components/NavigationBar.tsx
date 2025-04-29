@@ -26,10 +26,14 @@ const NavigationBar = () => {
             <Home size={20} />
             <span>Home</span>
           </Link>
-          <Link to="https://github.com/AtanasD123" className="flex items-center gap-2 hover:text-primary">
+          <a className="flex items-center gap-2 hover:text-primary"
+            href="https://github.com/AtanasD123" // Use href for the URL
+            target="_blank" // Opens the link in a new tab
+            rel="noopener noreferrer"
+          >
             <Layout size={20} />
             <span>Projects</span>
-          </Link>
+          </a>
           <Link to="/library" className="flex items-center gap-2 hover:text-primary">
             <Book size={20} />
             <span>Library</span>
