@@ -8,7 +8,7 @@ const blogPosts = [
   {
     title: "First Blog Post",
     excerpt: "Something about Nothing",
-    date: "April 20, 2025",
+    date: "April 28, 2025",
     readTime: "5 min read",
     slug: "post-1",
     content: "This is the full content of the first blog post..."
@@ -16,43 +16,44 @@ const blogPosts = [
   {
     title: "Second Blog Post",
     excerpt: "Nothing about Something",
-    date: "April 15, 2025",
+    date: "April 28, 2025",
     readTime: "3 min read",
     slug: "post-2",
     content: "This is the full content of the second blog post..."
   },
   {
-    title: "The Art of Programming",
-    excerpt: "Exploring the creative side of coding",
-    date: "April 10, 2025",
+    title: "Third Blog Post",
+    excerpt: "Excerpt goes here",
+    date: "April 28, 2025",
     readTime: "7 min read",
     slug: "post-3",
-    content: "This is the full content of the third blog post..."
+    content: "Content goes here"
   },
   {
-    title: "Web Development Trends 2025",
-    excerpt: "What's new in the world of web development",
-    date: "April 5, 2025",
+    title: "Fourth Blog Post",
+    excerpt: "Excerpt goes here",
+    date: "April 28, 2025",
     readTime: "4 min read",
     slug: "post-4",
-    content: "This is the full content of the fourth blog post..."
+    content: "Content goes here"
   }
 ];
 
 const Blog = () => {
   return (
-    <div className="container py-20 animate-fadeIn">
+    <div className="container py-20">
       <div className=" items-center pb-5">
-        <h1 className="text-4xl font-migra text-center mr-[330px] mt-[20px] mb-[20px]">Blog Posts</h1>
+        <h1 className="text-4xl font-migra text-center mr-[330px] mt-[20px] animate-slideInUp">Blog Posts</h1>
       </div>
       
       <div className="flex gap-6 gap-5">
         <ScrollArea className="h-[calc(100vh-12rem)] flex-1">
-          <div className="grid gap-6 pb-8">
+          <div className="grid gap-6 pb-8 scale-95">
             {blogPosts.map((post, index) => (
+            <div className="animate-slideInUp" style={{animationDelay: `${index * 100 + 100}ms`}}>
               <Card 
                 key={index} 
-                className="p-6 hover:shadow-xl transition-all transform scale-95 duration-300 hover:-translate-y-0.5 border border-primary/50"
+                className="p-6 hover:shadow-xl transition-all transform  duration-300 hover:-translate-y-0.5 border border-primary/50"
               >
                 <div className="flex flex-col">
                   <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
@@ -71,6 +72,7 @@ const Blog = () => {
                   </Link>
                 </div>
               </Card>
+              </div>
             ))}
           </div>
         </ScrollArea>
