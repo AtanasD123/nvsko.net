@@ -5,6 +5,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({ 
   server: {
+    base: "/navsko.net/",
     host: "::",
     port: 8080,
   },
