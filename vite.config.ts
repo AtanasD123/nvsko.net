@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig(({ mode }) => ({ 
   server: {
-    base: "/navsko.net/",
+    base: "/nvsko.net/",
     host: "::",
     port: 8080,
   },

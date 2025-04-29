@@ -34,7 +34,7 @@ const App = () => (
               <Route path="/library" element={<Library />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/about" element={<About />} />
-              <Route path="/notfound" element={<NotFound />} /> {/* used to be "/*"" */}
+              <Route path="/*" element={<NotFound />} /> {/* used to be "/*"" */}
             </Routes>
           </Layout>
         </BrowserRouter>
