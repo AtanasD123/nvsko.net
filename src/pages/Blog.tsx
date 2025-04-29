@@ -50,7 +50,7 @@ const Blog = () => {
         <ScrollArea className="h-[calc(100vh-12rem)] flex-1">
           <div className="grid gap-6 pb-8 scale-95">
             {blogPosts.map((post, index) => (
-            <div className="animate-slideInUp" style={{animationDelay: `${index * 100 + 100}ms`}}>
+            <div className="animate-slideInUp" style={{animationDelay: `${index * 100 + 0}ms`}}>
               <Card 
                 key={index} 
                 className="p-6 hover:shadow-xl transition-all transform  duration-300 hover:-translate-y-0.5 border border-primary/50"
