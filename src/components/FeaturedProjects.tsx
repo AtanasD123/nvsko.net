@@ -25,7 +25,7 @@ const projects = [
 const FeaturedProjects = () => {
   return (
     <section className="container py-20">
-      <h2 className="text-3xl font-sans font-bold mb-12">What I've been workin on</h2>
+      <h2 className="text-3xl font-sans font-bold mb-12">What I've been workin' on</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-slideInUp" style={{animationDelay: `${170}ms`}}>
         {projects.map((project, index) => (
           <a 
