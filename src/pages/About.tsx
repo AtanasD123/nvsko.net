@@ -12,10 +12,10 @@ export const About = () => {
       className="min-h-screen flex items-center justify-center py-20" id="about">
       <div className="max-w-3xl mx-auto px-4 pt-1.5"> {/* ml-[17.25rem] */}
         <div className=" items-center pb-5">
-          <h1 className="text-4xl font-migra text-center animate-fadeInSlow">About</h1>
+          <h1 className="text-4xl font-migra text-center animate-slideInUp">About</h1>
         </div>
 
-        <div className="animate-fadeInSlow mb-5" style={{animationDelay: `${100}ms`}}>
+        <div className="animate-slideInUp mb-5" style={{animationDelay: `${125}ms`}}>
         <Card className="p-8 hover:-translate-y-0.5 transition-all hover:shadow-xl border border-primary/50">
         <ul className="max-w-xl space-y-3 space-x-1 list-disc list-inside text-justify text-muted-foreground marker:text-primary marker:text-xl">
             <li className="text-foreground">
@@ -38,8 +38,8 @@ export const About = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5">
           <div className="hover:scale-105 transition-all transform">
-            <Card className="p-6 hover:shadow-lg transform transition border-primary/50 animate-fadeInSlow"
-             style={{animationDelay: `${150}ms`}}>
+            <Card className="p-6 hover:shadow-lg transform transition border-primary/50 animate-slideInUp"
+             style={{animationDelay: `${175}ms`}}>
               <h3 className="flex items-center text-2xl font-semibold mb-4">
                 <GraduationCap className="mr-3 h-6 w-6 mb-1 text-primary" /> Education
               </h3>
@@ -55,8 +55,8 @@ export const About = () => {
             </div>
 
             <div className="hover:scale-105 transition-all transform">
-            <Card className="p-6 hover:shadow-lg transform hover:scale-105 transition border-primary/50 animate-fadeInSlow" 
-             style={{animationDelay: `${150}ms`}}>
+            <Card className="p-6 hover:shadow-lg transform hover:scale-105 transition border-primary/50 animate-slideInUp" 
+             style={{animationDelay: `${225}ms`}}>
               <h3 className="flex items-center text-2xl font-semibold mb-4">
                 <Briefcase className="mr-3 h-6 w-6 mb-0.25 text-primary" /> Work Experience
               </h3>
@@ -71,7 +71,7 @@ export const About = () => {
             </div>
           </div>
         
-          <div className="animate-fadeInSlow" style={{animationDelay: `${200}ms`}}>
+          <div className="animate-slideInUp" style={{animationDelay: `${275}ms`}}>
           <Card className="p-6 hover:shadow-xl transform hover:shadow-xl hover:-translate-y-0.5 transition border-primary/50">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
