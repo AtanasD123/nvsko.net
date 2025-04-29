@@ -31,7 +31,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(250 47% 56%)", // Keeping the purple color
+          DEFAULT: "hsl(250 47% 56%)",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
