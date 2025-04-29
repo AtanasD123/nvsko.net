@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <section
       className="min-h-screen flex items-center justify-center py-20" id="about">
-      <div className="max-w-3xl mx-auto px-4 pt-5"> {/* ml-[17.25rem] */}
+      <div className="max-w-3xl mx-auto px-4 pt-1.5"> {/* ml-[17.25rem] */}
         <div className=" items-center pb-5">
           <h1 className="text-4xl font-migra text-center animate-fadeInSlow">About</h1>
         </div>

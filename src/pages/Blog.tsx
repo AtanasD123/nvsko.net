@@ -43,7 +43,7 @@ const Blog = () => {
   return (
     <div className="container py-20">
       <div className=" items-center pb-5">
-        <h1 className="text-4xl font-migra text-center mr-[330px] mt-[20px] animate-slideInUp">Blog Posts</h1>
+        <h1 className="text-4xl font-migra text-center mr-[330px] mt-[10px] animate-slideInUp">Blog Posts</h1>
       </div>
       
       <div className="flex gap-6 gap-5">
