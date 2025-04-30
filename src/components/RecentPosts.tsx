@@ -30,10 +30,10 @@ const RecentPosts = () => {
           <ArrowRight size={20} />
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 transition-all animate-fadeInSlow">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fadeInSlow">
         {posts.map((post, index) => (
-          <Card key={index} className="p-6 hover:shadow-xl hover:-translate-y-0.5 transition-all border border-primary/50">
-            <div className="flex flex-col h-full">
+          <Card key={index} className="p-6 hover:shadow-xl hover:-translate-y-0.5 transition-all border-primary/50">
+            <div className="">
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                 <span>{post.date}</span>
                 <span>•</span>

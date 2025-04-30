@@ -4,15 +4,15 @@ import { Card } from "@/components/ui/card";
 const projects = [
   {
     title: "Website",
-    description: "Literally what you are looking at",
+    description: "Source code for this site",
     tags: ["React", "TypeScript", "Tailwind"],
-    link: "https://github.com/AtanasD123/personal-playground-portal"
+    link: "https://github.com/AtanasD123/nvsko.net"
   },
   {
-    title: "Project Two",
-    description: "Work in Progress: Link to my Github",
-    tags: ["Next.js", "Node.js", "MongoDB"],
-    link: "https://github.com/AtanasD123"
+    title: "Audio Vizualizer",
+    description: "Vizualize your favorite tracks",
+    tags: ["Python", "PyGame", "FFT"],
+    link: "https://github.com/AtanasD123/Audio-Vizualizer"
   },
   {
     title: "Project Three",
